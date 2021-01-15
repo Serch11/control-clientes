@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
       this.loginService.verifLogin().subscribe(
         auth =>{
           if(auth){
-            this.router.navigate(['/']);
+            //this.router.navigate(['/']);
           }
         }
       )

@@ -26,7 +26,7 @@ export class CabeceroComponent implements OnInit {
       if (auth) {
         this.logginAuth = true;
         this.userName = auth.email;
-        this.router.navigate(['/'])
+        //this.router.navigate(['/'])
       } else {
         this.logginAuth = false;
       }

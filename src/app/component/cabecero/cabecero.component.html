@@ -26,8 +26,8 @@
         </div>
       </li>
 
-      <li *ngIf="!logginAuth" class="nav-item" style="display:flex;">
-        <a [routerLink]="['/login']" class="nav-link py-1">
+      <li *ngIf="!logginAuth" class="nav-item">
+        <a [routerLink]="['/login']" class="nav-link">
           Login
         </a>
       </li>
@@ -37,6 +37,12 @@
           <fa-icon [icon]="faLogout"></fa-icon>
         </a>
       </li>
+
+      <li class="nav-item">
+        <a [routerLink]="['registrarse']" class="nav-link" style="cursor:pointer">Registrarse</a>
+      </li>
+
+
     </ul>
   </div>
 

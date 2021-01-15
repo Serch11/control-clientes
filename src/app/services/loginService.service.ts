@@ -35,7 +35,11 @@ export class loginService {
     )
   }
 
-  logoutSession(){
+  logoutSession() {
     return this.authService.signOut()
+  }
+
+  createUser(email: string, password: string) {
+    return this.authService.createUserWithEmailAndPassword(email, password);
   }
 }
